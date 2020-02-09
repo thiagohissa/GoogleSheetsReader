@@ -51,7 +51,7 @@ function countNumberOfUsers(auth) {
     const sheets = google.sheets({version: 'v4', auth});
     var userCount = 0;
     sheets.spreadsheets.values.get({
-        spreadsheetId: '1t2haJP7q5Obm8AdGDjfS1fVT8PdKyIyVipnk4aWGUJI',
+        spreadsheetId: '', // Spread Sheet ID
         range: 'C2:H',
     }, (err, res) => {
         if (err) return console.log('The API returned an error: ' + err);
